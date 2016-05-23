@@ -18,6 +18,8 @@
     "eol-last": 0,
     "no-unused-vars": 1,
     "no-undef": 1,
+    "no-empty": 1,
+    "no-extra-boolean-cast": 1,
     /*"quotes": [
       1,
       "double"

@@ -8,7 +8,7 @@ module.exports = {
     entry:   [
         'webpack-hot-middleware/client',
         'babel-polyfill',
-        './assets/js/index'
+        './src/assets/js/index'
     ],
     output:  {
         filename: 'bundle.js'
@@ -26,14 +26,14 @@ module.exports = {
                 test:    /\.js$/,
                 loaders: [ 'eslint' ],
                 include: [
-                    path.resolve(__dirname, '../../assets/js')
+                    path.resolve(__dirname, '../../src/assets/js')
                 ]
             }
         ],
         loaders:    [ {
             loaders: [ 'react-hot', 'babel-loader' ],
             test:    /\.js$/,
-            include: path.join(__dirname, '../../assets/js'),
+            include: path.join(__dirname, '../../src/assets/js'),
             exclude: /node_modules/,
             plugins: [ 'transform-runtime' ]
         } ]
