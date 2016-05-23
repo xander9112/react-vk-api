@@ -3,6 +3,6 @@
 const bs = require('browser-sync');
 
 module.exports = (gulp, plugins, config) => () => {
-    bs.init({ server: './public' })
-    bs.watch('./public/**/*.*').on('change', bs.reload);
+    bs.init({ server: './' })
+    bs.watch('./**/*.*').on('change', bs.reload);
 };

@@ -8,9 +8,7 @@ import * as userActions from '../actions/UserActions'
 
 class App extends Component {
     componentDidMount () {
-        const { getAuth } = this.props.userActions;
-
-        getAuth();
+        this.props.userActions.getAuth();
     }
 
     render () {

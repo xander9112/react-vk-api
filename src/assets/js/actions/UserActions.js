@@ -9,7 +9,7 @@ export function getAuth () {
     "use strict";
 
     return function (dispatch) {
-        if (localStorage.getItem('user').length) {
+        if (localStorage.getItem('user') != null) {
             try {
                 let user = JSON.parse(localStorage.getItem('user'));
 
